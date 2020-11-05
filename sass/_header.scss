@@ -1,0 +1,26 @@
+.bindiCreativa {
+    .wrapper-nav {
+        width: 100%;
+        height: 50px;
+        top: 0;
+        //opacity: 0.87;
+        background-color: #fff;
+        box-shadow: 0px 3px 7px 0 rgba(0,0,0,0.35);
+        position: fixed;
+        z-index: 1;
+        .navbar {
+            //position: absolute;
+            //right: 50px;
+            .navbar-nav {
+                margin: 0 auto;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    cursor: pointer;
+                }
+
+            }
+       
+        }
+    }
+}

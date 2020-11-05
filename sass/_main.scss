@@ -1,0 +1,149 @@
+.bindiCreativa {
+    .wrapper-main {
+        .wrapper-card {
+            width: 100%;
+            height: auto;
+            min-height: 500px;
+            margin: 10px 0;
+            .imagen {
+                width: 100%;
+                height: 260px;
+                background-image: url(../img/logo-blanco.png);
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center;
+                background-size: contain;
+                margin-top: 60px;
+                @include respond-to(medium) {
+                    height: 400px;
+                    margin-top: 90px;
+                    margin-left: 60px;
+                }
+            }
+            &.comunicacion {
+                background-color: $firstCard;
+                margin-top: 0;
+                padding-bottom: 50px;
+                .title-card {
+                    text-align: center;
+                    margin: 0 auto;
+                    @include respond-to(medium) {
+                        padding: 200px 0;
+                    }
+                    h2 {
+                        margin-top: 20px;
+                        color: #fff;
+                        @include respond-to(medium) {
+                            margin-top: 0;
+                        }
+                    }
+                    p {
+                        color: #fecd08;
+                        font-size: 30px;
+                        font-weight: 600;
+                        @include respond-to(medium) {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+            &.escuchamos {
+                background-color: $secondCard;
+                padding-bottom: 10px;
+                .imagen {
+                    width: 100%;
+                    background-image: url(../img/ojo-blanco-horizontal.png);
+                    @include respond-to(medium) {
+                        position: absolute;
+                        right: 100px;
+                        height: 400px;
+                    }
+                }
+                @include respond-to(medium) {
+                    padding-left: 20px;
+                }
+                .wrap-title {
+                    margin-top: 100px;
+                    text-align: center;
+                    h2 {
+                        color: $thirthCard;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+                    @include respond-to(medium) {
+                        text-align: left;
+                    }
+                }
+                .foot-card {
+                    color: $thirthCard;
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    padding-top: 50px;
+                    @include respond-to(medium) {
+                        font-size: 28px;
+                    }
+                }
+            }
+            &.servicios {
+                background-color: $thirthCard;
+                text-align: center;
+                color: #fff;
+                padding-top: 20px;
+                padding-bottom: 50px;
+                .wrap-services {
+                    padding: 30px 15px;
+                    .circle {
+                        width: 150px;
+                        height: 150px;
+                        background-repeat: no-repeat;
+                        background-position-x: center;
+                        background-position-y: center;
+                        background-size: contain;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        margin-bottom: 15px;
+                        &.circle1 {
+                            background-image: url(../img/iris-rosa.png);
+                        }
+                        &.circle2 {
+                            background-image: url(../img/iris-amarillo.png);
+                        }
+                        &.circle3 {
+                            background-image: url(../img/iris-celeste.png);
+                        }
+                    }
+                    h2 {
+                        margin-top: 20px;
+                        @include respond-to(medium) {
+                            margin-top: 40px;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        color: #fcabf0;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+            &.origen {
+                background-color: $firstCard;
+                color: $secondCard;
+                padding-bottom: 50px;
+                h2 {
+                    padding-top: 60px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #fff;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

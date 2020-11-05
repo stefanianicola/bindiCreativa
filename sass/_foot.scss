@@ -1,0 +1,26 @@
+.bindiCreativa {
+    .wrap-foot {
+        .line-foot {
+            width: 100%;
+            height: 100px;
+            background-color: $secondCard;
+        }
+        .center-foot {
+            width: 100%;
+            height: 300px;
+            background-color: $thirthCard;
+            color: #fff;
+            padding: 90px 30px 0 60px;
+            h3 {
+                font-size: 30px;
+            }
+            a, p {
+                text-decoration: none;
+                color: #fff;
+                font-weight: 100;
+                margin-top: 20px;
+                line-height: normal;
+            }
+        }
+    }
+}
