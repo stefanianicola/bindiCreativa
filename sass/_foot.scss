@@ -2,24 +2,65 @@
     .wrap-foot {
         .line-foot {
             width: 100%;
-            height: 100px;
-            background-color: $secondCard;
+            height: 80px;
+            background-color: $bg-secondCard;
         }
         .center-foot {
+            position: relative;
             width: 100%;
-            height: 300px;
-            background-color: $thirthCard;
-            color: #fff;
-            padding: 90px 30px 0 60px;
+            height: auto;
+            background-color: $bg-thirthCard;
+            color: $whiteColor;
+            padding: 60px 30px 0 30px;
+            position: relative;
+            text-align: center;
+            @include respond-to(medium) {
+                text-align: left;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
             h3 {
                 font-size: 30px;
             }
-            a, p {
+            a,
+            p {
                 text-decoration: none;
-                color: #fff;
-                font-weight: 100;
-                margin-top: 20px;
-                line-height: normal;
+                color: $whiteColor;
+                font-weight: 400;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 18px;
+                i {
+                    font-size: 25px;
+                }
+            }
+            form {
+                .form-group {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-bottom: 15px;
+                }
+                .btn {
+                    background-color: $bg-firstCard;
+                    color: $whiteColor;
+                }
+            }
+            .imagen {
+                margin-top: 50px;
+                width: 100%;
+                background-image: url(../img/ojo-blanco-horizontal.png);
+                @include respond-to(medium) {
+                    margin-top: 0;
+                    position: absolute;
+                    right: 0;
+                    height: 350px;
+                    z-index: 100;
+                    top: 70px;
+                }
+            }
+            .redes {
+                margin-top: 30px;
+                text-align: center;
             }
         }
     }

@@ -5,25 +5,10 @@
             height: auto;
             min-height: 500px;
             margin: 10px 0;
-            .imagen {
-                width: 100%;
-                height: 260px;
-                background-image: url(../img/logo-blanco.png);
-                background-repeat: no-repeat;
-                background-position-x: center;
-                background-position-y: center;
-                background-size: contain;
-                margin-top: 60px;
-                @include respond-to(medium) {
-                    height: 400px;
-                    margin-top: 90px;
-                    margin-left: 60px;
-                }
-            }
+            padding: 50px 0;
             &.comunicacion {
-                background-color: $firstCard;
+                background: $bg-firstCard;
                 margin-top: 0;
-                padding-bottom: 50px;
                 .title-card {
                     text-align: center;
                     margin: 0 auto;
@@ -32,13 +17,13 @@
                     }
                     h2 {
                         margin-top: 20px;
-                        color: #fff;
+                        color: $whiteColor;
                         @include respond-to(medium) {
                             margin-top: 0;
                         }
                     }
                     p {
-                        color: #fecd08;
+                        color: $subTitleCom;
                         font-size: 30px;
                         font-weight: 600;
                         @include respond-to(medium) {
@@ -48,8 +33,18 @@
                 }
             }
             &.escuchamos {
-                background-color: $secondCard;
+                background-color: $bg-secondCard;
                 padding-bottom: 10px;
+                @include respond-to(medium){
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(100px);
+                    -webkit-transform: translateY(100px);
+                    -moz-transform: translateY(100px);
+                    transition: all .75s;
+                    -webkit-transition: all .75s;
+                    -moz-transition: all .75s;
+                }
                 .imagen {
                     width: 100%;
                     background-image: url(../img/ojo-blanco-horizontal.png);
@@ -59,17 +54,14 @@
                         height: 400px;
                     }
                 }
-                @include respond-to(medium) {
-                    padding-left: 20px;
-                }
                 .wrap-title {
                     margin-top: 100px;
                     text-align: center;
                     h2 {
-                        color: $thirthCard;
+                        color: $bg-thirthCard;
                     }
                     p {
-                        color: #fff;
+                        color: $whiteColor;
                         font-size: 30px;
                         font-weight: 600;
                     }
@@ -78,7 +70,7 @@
                     }
                 }
                 .foot-card {
-                    color: $thirthCard;
+                    color: $bg-thirthCard;
                     margin-bottom: 0;
                     font-weight: 400;
                     padding-top: 50px;
@@ -88,11 +80,19 @@
                 }
             }
             &.servicios {
-                background-color: $thirthCard;
+                background-color: $bg-thirthCard;
                 text-align: center;
-                color: #fff;
-                padding-top: 20px;
-                padding-bottom: 50px;
+                color: $whiteColor;
+                @include respond-to(medium){
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(100px);
+                    -webkit-transform: translateY(100px);
+                    -moz-transform: translateY(100px);
+                    transition: all .75s;
+                    -webkit-transition: all .75s;
+                    -moz-transition: all .75s;
+                }
                 .wrap-services {
                     padding: 30px 15px;
                     .circle {
@@ -123,27 +123,70 @@
                     }
                     p {
                         font-size: 18px;
-                        color: #fcabf0;
+                        color: $leterService;
                         padding: 0;
                         margin: 0;
                     }
                 }
             }
             &.origen {
-                background-color: $firstCard;
-                color: $secondCard;
-                padding-bottom: 50px;
+                background-color: $bg-firstCard;
+                color: $bg-secondCard;
+                @include respond-to(medium){
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(100px);
+                    -webkit-transform: translateY(100px);
+                    -moz-transform: translateY(100px);
+                    transition: all .75s;
+                    -webkit-transition: all .75s;
+                    -moz-transition: all .75s;
+                }
                 h2 {
                     padding-top: 60px;
                 }
                 p {
                     font-size: 20px;
                     line-height: 32px;
-                    color: #fff;
+                    color: $whiteColor;
                     padding: 0;
                     margin: 0;
                 }
             }
+            &.credenciales {
+                padding: 0;
+                @include respond-to(medium){
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(100px);
+                    -webkit-transform: translateY(100px);
+                    -moz-transform: translateY(100px);
+                    transition: all .75s;
+                    -webkit-transition: all .75s;
+                    -moz-transition: all .75s;
+                }
+                .slide {
+                    width: 100%;
+                    ol {
+                        li {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            &.qa-parallax-active {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                -webkit-transform: translateY(0);
+                -moz-transform: translateY(0);
+            }
+  
         }
     }
+
 }

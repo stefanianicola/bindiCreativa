@@ -6,31 +6,13 @@
     font-weight: 700; }
     @media all and (min-width: 768px) {
       .bindiCreativa h2 {
-        font-size: 60px; } }
+        font-size: 50px; } }
+    @media all and (min-width: 992px) {
+      .bindiCreativa h2 {
+        font-size: 70px; } }
   .bindiCreativa h3 {
     font-weight: 600; }
-
-.bindiCreativa .wrapper-nav {
-  width: 100%;
-  height: 50px;
-  top: 0;
-  background-color: #fff;
-  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
-  position: fixed;
-  z-index: 1; }
-  .bindiCreativa .wrapper-nav .navbar .navbar-nav {
-    margin: 0 auto; }
-    .bindiCreativa .wrapper-nav .navbar .navbar-nav a {
-      text-decoration: none;
-      color: #000;
-      cursor: pointer; }
-
-.bindiCreativa .wrapper-main .wrapper-card {
-  width: 100%;
-  height: auto;
-  min-height: 500px;
-  margin: 10px 0; }
-  .bindiCreativa .wrapper-main .wrapper-card .imagen {
+  .bindiCreativa .imagen {
     width: 100%;
     height: 260px;
     background-image: url(../img/logo-blanco.png);
@@ -40,14 +22,65 @@
     background-size: contain;
     margin-top: 60px; }
     @media all and (min-width: 768px) {
-      .bindiCreativa .wrapper-main .wrapper-card .imagen {
-        height: 400px;
-        margin-top: 90px;
-        margin-left: 60px; } }
+      .bindiCreativa .imagen {
+        height: 360px;
+        margin-top: 90px; } }
+  @media all and (min-width: 768px) {
+    .bindiCreativa section {
+      padding-left: 100px;
+      padding-right: 100px; } }
+
+.bindiCreativa .wrapper-nav {
+  width: 100%;
+  height: 50px;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
+  position: fixed;
+  z-index: 600; }
+  .bindiCreativa .wrapper-nav .navbar {
+    padding: 0; }
+    .bindiCreativa .wrapper-nav .navbar .navbar-toggler {
+      line-height: 2;
+      position: absolute;
+      top: 0;
+      right: 30px; }
+    .bindiCreativa .wrapper-nav .navbar .navbar-nav {
+      text-align: center;
+      background-color: #fff;
+      margin-top: 30px; }
+      .bindiCreativa .wrapper-nav .navbar .navbar-nav .nav-item {
+        border-bottom: 1px solid #f2f2f2; }
+        .bindiCreativa .wrapper-nav .navbar .navbar-nav .nav-item a {
+          text-decoration: none;
+          color: #000;
+          padding: 12px 20px;
+          cursor: pointer; }
+      @media all and (min-width: 992px) {
+        .bindiCreativa .wrapper-nav .navbar .navbar-nav {
+          margin: 0;
+          position: absolute;
+          right: 200px;
+          top: 0px; } }
+    .bindiCreativa .wrapper-nav .navbar img {
+      width: auto;
+      height: 40px;
+      position: absolute;
+      left: 30px;
+      top: 5px; }
+      @media all and (min-width: 992px) {
+        .bindiCreativa .wrapper-nav .navbar img {
+          left: 200px; } }
+
+.bindiCreativa .wrapper-main .wrapper-card {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  margin: 10px 0;
+  padding: 50px 0; }
   .bindiCreativa .wrapper-main .wrapper-card.comunicacion {
-    background-color: #FD30A0;
-    margin-top: 0;
-    padding-bottom: 50px; }
+    background: #FD30A0;
+    margin-top: 0; }
     .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card {
       text-align: center;
       margin: 0 auto; }
@@ -70,6 +103,16 @@
   .bindiCreativa .wrapper-main .wrapper-card.escuchamos {
     background-color: #EFE65E;
     padding-bottom: 10px; }
+    @media all and (min-width: 768px) {
+      .bindiCreativa .wrapper-main .wrapper-card.escuchamos {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        transition: all .75s;
+        -webkit-transition: all .75s;
+        -moz-transition: all .75s; } }
     .bindiCreativa .wrapper-main .wrapper-card.escuchamos .imagen {
       width: 100%;
       background-image: url(../img/ojo-blanco-horizontal.png); }
@@ -78,9 +121,6 @@
           position: absolute;
           right: 100px;
           height: 400px; } }
-    @media all and (min-width: 768px) {
-      .bindiCreativa .wrapper-main .wrapper-card.escuchamos {
-        padding-left: 20px; } }
     .bindiCreativa .wrapper-main .wrapper-card.escuchamos .wrap-title {
       margin-top: 100px;
       text-align: center; }
@@ -104,9 +144,17 @@
   .bindiCreativa .wrapper-main .wrapper-card.servicios {
     background-color: #787877;
     text-align: center;
-    color: #fff;
-    padding-top: 20px;
-    padding-bottom: 50px; }
+    color: #fff; }
+    @media all and (min-width: 768px) {
+      .bindiCreativa .wrapper-main .wrapper-card.servicios {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        transition: all .75s;
+        -webkit-transition: all .75s;
+        -moz-transition: all .75s; } }
     .bindiCreativa .wrapper-main .wrapper-card.servicios .wrap-services {
       padding: 30px 15px; }
       .bindiCreativa .wrapper-main .wrapper-card.servicios .wrap-services .circle {
@@ -132,13 +180,22 @@
             margin-top: 40px; } }
       .bindiCreativa .wrapper-main .wrapper-card.servicios .wrap-services p {
         font-size: 18px;
-        color: #fcabf0;
+        color: #f9bdf0;
         padding: 0;
         margin: 0; }
   .bindiCreativa .wrapper-main .wrapper-card.origen {
     background-color: #FD30A0;
-    color: #EFE65E;
-    padding-bottom: 50px; }
+    color: #EFE65E; }
+    @media all and (min-width: 768px) {
+      .bindiCreativa .wrapper-main .wrapper-card.origen {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        transition: all .75s;
+        -webkit-transition: all .75s;
+        -moz-transition: all .75s; } }
     .bindiCreativa .wrapper-main .wrapper-card.origen h2 {
       padding-top: 60px; }
     .bindiCreativa .wrapper-main .wrapper-card.origen p {
@@ -147,24 +204,85 @@
       color: #fff;
       padding: 0;
       margin: 0; }
+  .bindiCreativa .wrapper-main .wrapper-card.credenciales {
+    padding: 0; }
+    @media all and (min-width: 768px) {
+      .bindiCreativa .wrapper-main .wrapper-card.credenciales {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        transition: all .75s;
+        -webkit-transition: all .75s;
+        -moz-transition: all .75s; } }
+    .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide {
+      width: 100%; }
+      .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide ol li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-right: 10px; }
+  .bindiCreativa .wrapper-main .wrapper-card.qa-parallax-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0); }
 
 .bindiCreativa .wrap-foot .line-foot {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #EFE65E; }
 .bindiCreativa .wrap-foot .center-foot {
+  position: relative;
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #787877;
   color: #fff;
-  padding: 90px 30px 0 60px; }
+  padding: 60px 30px 0 30px;
+  position: relative;
+  text-align: center; }
+  @media all and (min-width: 768px) {
+    .bindiCreativa .wrap-foot .center-foot {
+      text-align: left;
+      padding-left: 100px;
+      padding-right: 100px; } }
   .bindiCreativa .wrap-foot .center-foot h3 {
     font-size: 30px; }
-  .bindiCreativa .wrap-foot .center-foot a, .bindiCreativa .wrap-foot .center-foot p {
+  .bindiCreativa .wrap-foot .center-foot a,
+  .bindiCreativa .wrap-foot .center-foot p {
     text-decoration: none;
     color: #fff;
-    font-weight: 100;
-    margin-top: 20px;
-    line-height: normal; }
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px; }
+    .bindiCreativa .wrap-foot .center-foot a i,
+    .bindiCreativa .wrap-foot .center-foot p i {
+      font-size: 25px; }
+  .bindiCreativa .wrap-foot .center-foot form .form-group {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 15px; }
+  .bindiCreativa .wrap-foot .center-foot form .btn {
+    background-color: #FD30A0;
+    color: #fff; }
+  .bindiCreativa .wrap-foot .center-foot .imagen {
+    margin-top: 50px;
+    width: 100%;
+    background-image: url(../img/ojo-blanco-horizontal.png); }
+    @media all and (min-width: 768px) {
+      .bindiCreativa .wrap-foot .center-foot .imagen {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        height: 350px;
+        z-index: 100;
+        top: 70px; } }
+  .bindiCreativa .wrap-foot .center-foot .redes {
+    margin-top: 30px;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
