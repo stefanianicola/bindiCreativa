@@ -61,6 +61,14 @@
             .redes {
                 margin-top: 30px;
                 text-align: center;
+                .wrap-icon {
+                    position: relative;
+                    i {
+                        vertical-align: bottom;
+                        font-size: 30px;
+                   
+                    }
+                }
             }
         }
     }

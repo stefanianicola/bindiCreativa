@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="Bindi Creativa, Bindi, Creativa, agencia creativa, agencia, diseño">
+    <meta name="author" content="Vaidonna">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bindi Creativa</title>
-
+    <link rel="stylesheet" href="css/font/flaticon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="./img/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -18,10 +21,10 @@
 </head>
 
 <body class="bindiCreativa">
-    <header class="wrapper-nav container-fluid p-0">
+    <header class="wrapper-nav  container-fluid p-0">
         <nav class="navbar navbar-expand-lg ">
             <a class="nav-link" href="index.html">
-                <img src="./img/logo-rosa-horizontal.png" alt="">
+                <img id="logo" class="logo" src="./img/logo-rosa-horizontal.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +42,7 @@
                         <a class="nav-link" href="#origen">Origen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./credenciales.html">Credenciales</a>
+                        <a class="nav-link" href="#credenciales">Credenciales</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
@@ -49,22 +52,23 @@
         </nav>
     </header>
     <main class="wrapper-main container-fluid p-0">
+
         <section class="wrapper-card comunicacion row">
-            <div class="col-12 col-md-4 imagen">
+            <div class="col-12 col-md-4 imagen thumbnail">
             </div>
-            <div class="col-12 col-md-7 title-card">
+            <div class="col-12 col-md-7 title-card thumbnail">
                 <h2>COMUNICACIÓN</h2>
                 <p>para la felicidad</p>
             </div>
         </section>
-        <section id="escuchanos" class="wrapper-card escuchamos row ">
-            <div class="col-12 col-md-7 wrap-title">
+        <section id="escuchanos" class="wrapper-card escuchamos row">
+            <div class="col-12 col-md-7 wrap-title thumbnail">
                 <h2>ESCUCHAMOS</h2>
                 <h2>PENSAMOS</h2>
                 <h2>CREAMOS</h2>
                 <P>Acciones de comunicacion holistica para organizaciones y empresas.</P>
             </div>
-            <div class="col-12 col-md-4 imagen"></div>
+            <div class="col-12 col-md-4 imagen thumbnail"></div>
             <div class="col-12">
                 <p class="foot-card text-center">#SOMOS LA NUEVA NORMALIDAD</p>
             </div>
@@ -74,18 +78,18 @@
                 <h2>SERVICIOS</h2>
             </div>
             <div class="col-12 col-md-4 wrap-services">
-                <div class="col-12 circle circle1"></div>
+                <div class="col-12 circle circle1 thumbnail"></div>
                 <h3>MKT IN & OUT</h3>
                 <p>Creamos estrategias de comunicación interna y externa.</p>
                 <p>Trabajamos holísticamente desde la cultura hasta la imagen de marca.</p>
             </div>
-            <div class="col-12 col-md-4 wrap-services">
+            <div class="col-12 col-md-4 wrap-services thumbnail">
                 <div class="col-12 circle circle2"></div>
                 <h3>ALIANZAS & RSE</h3>
                 <p>Creamos oportunidades para relacionar marcas y organizaciones con compromiso social.</p>
             </div>
-            <div class="col-12 col-md-4 wrap-services">
-                <div class="col-12 circle circle3"></div>
+            <div class="col-12 col-md-4 wrap-services thumbnail">
+                <div class="col-12 circle circle3 thumbnail"></div>
                 <h3>P.H.E.</h3>
                 <p>Diseñamos e implementamos</p>
                 <p>Programas Holísticos Esenciales
@@ -94,8 +98,8 @@
             </div>
         </section>
         <section id="origen" class="wrapper-card origen row  ">
-            <div class="col-12 col-md-3 imagen"></div>
-            <div class="col-12 col-md-7 offset-md-1">
+            <div class="col-12 col-md-3 imagen thumbnail"></div>
+            <div class="col-12 col-md-7 offset-md-1 thumbnail">
                 <h2>ORIGEN Y FISLOSOFIA</h2>
                 <p>Bindi es el tercer ojo en la antigua tradición védica,
                     utilizado para ver mas allá.</p>
@@ -110,7 +114,7 @@
             </div>
         </section>
         <section class="wrapper-card credenciales row " id="credenciales">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -118,13 +122,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/pruebas/1.png" class="w-100" alt="...">
+                        <img src="./img/fotosPdf/1.png" class="w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/pruebas/2.png" class="w-100" alt="...">
+                        <img src="./img/fotosPdf/2.png" class="w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/pruebas/3.png" class="w-100" alt="...">
+                        <img src="./img/fotosPdf/3.png" class="w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -156,11 +160,11 @@
                                 name="apellido" required>
                         </div>
                         <div class="form-group col-12">
-                            <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1"
+                            <input type="email" class="form-control" placeholder="Email" id="correo"
                                 name="correo" aria-describedby="emailHelp" required>
                         </div>
                         <div class="form-group col-12">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            <textarea class="form-control" id="Mensaje" rows="3"
                                 placeholder="Mensaje" name="mensaje" required></textarea>
                         </div>
                         <button type="submit" class="col-12 btn">Enviar</button>
@@ -169,9 +173,9 @@
                 </div>
                 <div class="col-12 col-md-6 imagen"></div>
                 <div class="row p-0 redes">
-                    <a href="https://www.instagram.com/bindicreativa/?hl=es-la" class="col-12 col-md-4"><i
+                    <a href="https://www.instagram.com/bindicreativa/?hl=es-la" class="col-12 col-md-4 wrap-icon"><i
                             class="fab fa-instagram"></i> @bindicreativa</a>
-                    <p class="col-12 col-md-4"> <i class="fab fa-whatsapp"></i> +54911-6846-9841</p>
+                    <p class="col-12 col-md-4 wrap-icon"> +54911-6846-9841</p>
                     <a href="/" class="col-12 col-md-4">www.bindicreativa.com.ar</a>
                 </div>
             </div>
@@ -183,8 +187,10 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

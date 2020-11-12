@@ -1,4 +1,4 @@
-.bindiCreativa {
+.bindiCreativa {  
     .wrapper-main {
         .wrapper-card {
             width: 100%;
@@ -6,6 +6,10 @@
             min-height: 500px;
             margin: 10px 0;
             padding: 50px 0;
+            @include respond-to(medium) {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
             &.comunicacion {
                 background: $bg-firstCard;
                 margin-top: 0;
@@ -35,27 +39,29 @@
             &.escuchamos {
                 background-color: $bg-secondCard;
                 padding-bottom: 10px;
-                @include respond-to(medium){
+                @include respond-to(medium) {
                     opacity: 0;
                     visibility: hidden;
                     transform: translateY(100px);
                     -webkit-transform: translateY(100px);
                     -moz-transform: translateY(100px);
-                    transition: all .75s;
-                    -webkit-transition: all .75s;
-                    -moz-transition: all .75s;
+                    transition: all 0.75s;
+                    -webkit-transition: all 0.75s;
+                    -moz-transition: all 0.75s;
                 }
                 .imagen {
                     width: 100%;
+                    height: 380px;
+                    margin-top: 0;
                     background-image: url(../img/ojo-blanco-horizontal.png);
                     @include respond-to(medium) {
                         position: absolute;
                         right: 100px;
-                        height: 400px;
+                        margin-top: 20px;
                     }
                 }
                 .wrap-title {
-                    margin-top: 100px;
+                    margin-top: 60px;
                     text-align: center;
                     h2 {
                         color: $bg-thirthCard;
@@ -83,28 +89,28 @@
                 background-color: $bg-thirthCard;
                 text-align: center;
                 color: $whiteColor;
-                @include respond-to(medium){
+                @include respond-to(medium) {
                     opacity: 0;
                     visibility: hidden;
                     transform: translateY(100px);
                     -webkit-transform: translateY(100px);
                     -moz-transform: translateY(100px);
-                    transition: all .75s;
-                    -webkit-transition: all .75s;
-                    -moz-transition: all .75s;
+                    transition: all 0.75s;
+                    -webkit-transition: all 0.75s;
+                    -moz-transition: all 0.75s;
                 }
                 .wrap-services {
                     padding: 30px 15px;
                     .circle {
-                        width: 150px;
-                        height: 150px;
+                        width: 180px;
+                        height: 180px;
                         background-repeat: no-repeat;
                         background-position-x: center;
                         background-position-y: center;
                         background-size: contain;
                         margin: 0 auto;
                         border-radius: 50%;
-                        margin-bottom: 15px;
+                        margin-bottom: 30px;
                         &.circle1 {
                             background-image: url(../img/iris-rosa.png);
                         }
@@ -132,15 +138,15 @@
             &.origen {
                 background-color: $bg-firstCard;
                 color: $bg-secondCard;
-                @include respond-to(medium){
+                @include respond-to(medium) {
                     opacity: 0;
                     visibility: hidden;
                     transform: translateY(100px);
                     -webkit-transform: translateY(100px);
                     -moz-transform: translateY(100px);
-                    transition: all .75s;
-                    -webkit-transition: all .75s;
-                    -moz-transition: all .75s;
+                    transition: all 0.75s;
+                    -webkit-transition: all 0.75s;
+                    -moz-transition: all 0.75s;
                 }
                 h2 {
                     padding-top: 60px;
@@ -154,19 +160,43 @@
                 }
             }
             &.credenciales {
+                min-height: 380px;
                 padding: 0;
-                @include respond-to(medium){
+                @include respond-to(small) {
+                    min-height: 420px; 
+                }
+                @include respond-to(medium) {
+                    min-height: 500px; 
                     opacity: 0;
                     visibility: hidden;
                     transform: translateY(100px);
                     -webkit-transform: translateY(100px);
                     -moz-transform: translateY(100px);
-                    transition: all .75s;
-                    -webkit-transition: all .75s;
-                    -moz-transition: all .75s;
+                    transition: all 0.75s;
+                    -webkit-transition: all 0.75s;
+                    -moz-transition: all 0.75s;
+                }
+                @include respond-to(normal) {
+                    min-height: 600px; 
+                }
+                @include respond-to(large) {
+                    min-height: 800px; 
                 }
                 .slide {
                     width: 100%;
+                    height: 385px;
+                    @include respond-to(small) {
+                        min-height: 425px; 
+                    }
+                    @include respond-to(medium) {
+                        min-height: 505px; 
+                    }
+                    @include respond-to(normal) {
+                        min-height: 605px; 
+                    }
+                    @include respond-to(large) {
+                        min-height: 805px; 
+                    }
                     ol {
                         li {
                             width: 15px;
@@ -174,6 +204,21 @@
                             border-radius: 50%;
                             margin-left: 10px;
                             margin-right: 10px;
+                        }
+                    }
+                    img {
+                        height: 380px;
+                        @include respond-to(small) {
+                            height: 420px; 
+                        }
+                        @include respond-to(medium) {
+                            min-height: 500px; 
+                        }
+                        @include respond-to(normal) {
+                            min-height: 600px; 
+                        }
+                        @include respond-to(large) {
+                            min-height: 800px; 
                         }
                     }
                 }
@@ -185,8 +230,6 @@
                 -webkit-transform: translateY(0);
                 -moz-transform: translateY(0);
             }
-  
         }
     }
-
 }
