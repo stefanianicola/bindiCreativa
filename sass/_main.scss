@@ -51,13 +51,14 @@
                 }
                 .imagen {
                     width: 100%;
-                    height: 380px;
-                    margin-top: 0;
+                    height: 150px;
+                    margin: 20px auto;
                     background-image: url(../img/ojo-blanco-horizontal.png);
                     @include respond-to(medium) {
                         position: absolute;
                         right: 100px;
-                        margin-top: 20px;
+                        height: 360px;
+                        margin: 20px 0 0 0;
                     }
                 }
                 .wrap-title {
@@ -141,8 +142,10 @@
             &.origen {
                 background-color: $bg-firstCard;
                 color: $bg-secondCard;
+                padding-top: 0;
                 @include respond-to(medium) {
                     opacity: 0;
+                    padding-top: 50px;
                     visibility: hidden;
                     transform: translateY(100px);
                     -webkit-transform: translateY(100px);
@@ -163,13 +166,10 @@
                 }
             }
             &.credenciales {
-                min-height: 380px;
+                min-height: auto;
+                height: auto;
                 padding: 0;
-                @include respond-to(small) {
-                    min-height: 420px; 
-                }
                 @include respond-to(medium) {
-                    min-height: 500px; 
                     opacity: 0;
                     visibility: hidden;
                     transform: translateY(100px);
@@ -179,50 +179,11 @@
                     -webkit-transition: all 0.75s;
                     -moz-transition: all 0.75s;
                 }
-                @include respond-to(normal) {
-                    min-height: 700px; 
-                }
-                // @include respond-to(large) {
-                //     min-height: 800px; 
-                // }
                 .slide {
                     width: 100%;
-                    height: 385px;
-                    @include respond-to(small) {
-                        min-height: 425px; 
-                    }
-                    @include respond-to(medium) {
-                        min-height: 505px; 
-                    }
-                    @include respond-to(normal) {
-                        min-height: 700px; 
-                    }
-                    // @include respond-to(large) {
-                    //     min-height: 805px; 
-                    // }
-                    ol {
-                        li {
-                            width: 15px;
-                            height: 15px;
-                            border-radius: 50%;
-                            margin-left: 10px;
-                            margin-right: 10px;
-                        }
-                    }
+                    height: auto;
                     img {
-                        height: 380px;
-                        @include respond-to(small) {
-                            height: 420px; 
-                        }
-                        @include respond-to(medium) {
-                            min-height: 500px; 
-                        }
-                        @include respond-to(normal) {
-                            min-height: 700px; 
-                        }
-                        // @include respond-to(large) {
-                        //     min-height: 800px; 
-                        // }
+                        height: auto;
                     }
                 }
             }

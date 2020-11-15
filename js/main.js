@@ -10,7 +10,9 @@ $(document).ready(function () {
 				scrollTop: $(hash).offset().top
 			}, 800, function () {
 				window.location.hash = hash;
+				$('#navbarNav').removeClass('show');
 			});
+			
 		}
 	});
 
@@ -59,12 +61,6 @@ $(document).ready(function () {
 	new simpleParallax(image, {
 		overflow: true
 	});
-
-	if (winWidth < 600) {
-		new simpleParallax(image, {
-			scale: 1.5
-		});
-	}
 
 
 	$(function () {

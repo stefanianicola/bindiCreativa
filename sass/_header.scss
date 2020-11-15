@@ -8,6 +8,8 @@
         position: fixed;
         z-index: 600;
         transition: all .5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
         .navbar {
             .navbar-toggler {
                 line-height: 2;
@@ -29,6 +31,9 @@
                         color: #000;
                         padding: 12px 20px;
                         cursor: pointer;
+                        &:hover {
+                            text-decoration-line: underline;
+                        }
                     }
                     @include respond-to(normal){
                         border-bottom: none;
@@ -55,5 +60,6 @@
     }
     .contrain {
         opacity: 0.9;
+        -khtml-opacity: 0.9;
     }
 }

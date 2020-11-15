@@ -23,7 +23,7 @@ $smtpUsuario = "no-responder@bindicreativa.com.ar";  // Mi cuenta de correo
 $smtpClave = ".XyxN(GpcK7*";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
-$emailDestino = "stefanianicola@gmail.com";
+$emailDestino = "hola@bindicreativa.com.ar";
 
 $mail = new PHPMailer();
 $mail->IsSMTP();

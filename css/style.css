@@ -39,7 +39,9 @@
   box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
   position: fixed;
   z-index: 600;
-  transition: all .5s; }
+  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s; }
   .bindiCreativa .wrapper-nav .navbar {
     padding: 0; }
     .bindiCreativa .wrapper-nav .navbar .navbar-toggler {
@@ -60,6 +62,8 @@
           color: #000;
           padding: 12px 20px;
           cursor: pointer; }
+          .bindiCreativa .wrapper-nav .navbar .navbar-nav .nav-item a:hover {
+            text-decoration-line: underline; }
         @media all and (min-width: 992px) {
           .bindiCreativa .wrapper-nav .navbar .navbar-nav .nav-item {
             border-bottom: none; } }
@@ -79,7 +83,8 @@
         .bindiCreativa .wrapper-nav .navbar .logo {
           left: 200px; } }
 .bindiCreativa .contrain {
-  opacity: 0.9; }
+  opacity: 0.9;
+  -khtml-opacity: 0.9; }
 
 .bindiCreativa .wrapper-main .wrapper-card {
   width: 100%;
@@ -92,7 +97,7 @@
       padding-left: 100px;
       padding-right: 100px; } }
   .bindiCreativa .wrapper-main .wrapper-card.comunicacion {
-    background: #eb6fbd;
+    background: #FE4096;
     margin-top: 0; }
     .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card {
       text-align: center;
@@ -128,14 +133,15 @@
         -moz-transition: all 0.75s; } }
     .bindiCreativa .wrapper-main .wrapper-card.escuchamos .imagen {
       width: 100%;
-      height: 380px;
-      margin-top: 0;
+      height: 150px;
+      margin: 20px auto;
       background-image: url(../img/ojo-blanco-horizontal.png); }
       @media all and (min-width: 768px) {
         .bindiCreativa .wrapper-main .wrapper-card.escuchamos .imagen {
           position: absolute;
           right: 100px;
-          margin-top: 20px; } }
+          height: 360px;
+          margin: 20px 0 0 0; } }
     .bindiCreativa .wrapper-main .wrapper-card.escuchamos .wrap-title {
       margin-top: 60px;
       text-align: center; }
@@ -202,11 +208,13 @@
         padding: 0;
         margin: 0; }
   .bindiCreativa .wrapper-main .wrapper-card.origen {
-    background-color: #eb6fbd;
-    color: #f0ed73; }
+    background-color: #FE4096;
+    color: #f0ed73;
+    padding-top: 0; }
     @media all and (min-width: 768px) {
       .bindiCreativa .wrapper-main .wrapper-card.origen {
         opacity: 0;
+        padding-top: 50px;
         visibility: hidden;
         transform: translateY(100px);
         -webkit-transform: translateY(100px);
@@ -223,14 +231,11 @@
       padding: 0;
       margin: 0; }
   .bindiCreativa .wrapper-main .wrapper-card.credenciales {
-    min-height: 380px;
+    min-height: auto;
+    height: auto;
     padding: 0; }
-    @media all and (min-width: 576px) {
-      .bindiCreativa .wrapper-main .wrapper-card.credenciales {
-        min-height: 420px; } }
     @media all and (min-width: 768px) {
       .bindiCreativa .wrapper-main .wrapper-card.credenciales {
-        min-height: 500px;
         opacity: 0;
         visibility: hidden;
         transform: translateY(100px);
@@ -239,38 +244,11 @@
         transition: all 0.75s;
         -webkit-transition: all 0.75s;
         -moz-transition: all 0.75s; } }
-    @media all and (min-width: 992px) {
-      .bindiCreativa .wrapper-main .wrapper-card.credenciales {
-        min-height: 700px; } }
     .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide {
       width: 100%;
-      height: 385px; }
-      @media all and (min-width: 576px) {
-        .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide {
-          min-height: 425px; } }
-      @media all and (min-width: 768px) {
-        .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide {
-          min-height: 505px; } }
-      @media all and (min-width: 992px) {
-        .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide {
-          min-height: 700px; } }
-      .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide ol li {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        margin-left: 10px;
-        margin-right: 10px; }
+      height: auto; }
       .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide img {
-        height: 380px; }
-        @media all and (min-width: 576px) {
-          .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide img {
-            height: 420px; } }
-        @media all and (min-width: 768px) {
-          .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide img {
-            min-height: 500px; } }
-        @media all and (min-width: 992px) {
-          .bindiCreativa .wrapper-main .wrapper-card.credenciales .slide img {
-            min-height: 700px; } }
+        height: auto; }
   .bindiCreativa .wrapper-main .wrapper-card.qa-parallax-active {
     opacity: 1;
     visibility: visible;
@@ -298,6 +276,8 @@
       padding-right: 100px; } }
   .bindiCreativa .wrap-foot .center-foot h3 {
     font-size: 30px; }
+  .bindiCreativa .wrap-foot .center-foot a:hover {
+    text-decoration-line: underline; }
   .bindiCreativa .wrap-foot .center-foot a,
   .bindiCreativa .wrap-foot .center-foot p {
     text-decoration: none;
@@ -314,7 +294,7 @@
     padding-right: 0;
     margin-bottom: 15px; }
   .bindiCreativa .wrap-foot .center-foot form .btn {
-    background-color: #eb6fbd;
+    background-color: #FE4096;
     color: #fff; }
   .bindiCreativa .wrap-foot .center-foot .imagen {
     margin-top: 50px;
