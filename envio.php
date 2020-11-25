@@ -23,7 +23,7 @@ $smtpUsuario = "no-responder@bindicreativa.com.ar";  // Mi cuenta de correo
 $smtpClave = ".XyxN(GpcK7*";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
-$emailDestino = "hola@bindicreativa.com.ar";
+$emailDestino = "hola@bindicreativa.com.ar"; //hola@bindicreativa.com.ar
 
 $mail = new PHPMailer();
 $mail->IsSMTP();
@@ -54,7 +54,7 @@ $mail->Body = "Nombre y Apellido: {$nombreHtml} {$apellidoHtml} <br /> Mensaje: 
 
 $estadoEnvio = $mail->Send(); 
 if($estadoEnvio){
-    header("location: ./index.html?name=$nombre&apellido=$apellido&email=$email"); 
+    header("HTTP/1.1 200 OK");
 } else {
-    header('location: ./index.html?sent=error');
+    header("HTTP/1.1 500 ERROR");
 }

@@ -4,7 +4,7 @@
             width: 100%;
             height: auto;
             min-height: 500px;
-            margin: 10px 0;
+            margin: 0;
             padding: 50px 0;
             @include respond-to(medium) {
                 padding-left: 100px;
@@ -22,13 +22,10 @@
                     h2 {
                         margin-top: 20px;
                         color: $whiteColor;
-                        @include respond-to(medium) {
-                            margin-top: 0;
-                        }
                     }
                     p {
-                        color: $subTitleCom;
-                        font-size: 30px;
+                        color: $bg-secondCard;
+                        font-size: 28px;
                         font-weight: 600;
                         @include respond-to(medium) {
                             font-size: 40px;
@@ -58,7 +55,10 @@
                         position: absolute;
                         right: 100px;
                         height: 360px;
-                        margin: 20px 0 0 0;
+                        margin: 100px 0 0 0;
+                    }
+                    @include respond-to(normal) {
+                        margin: 40px 0 0 0;
                     }
                 }
                 .wrap-title {
@@ -82,10 +82,10 @@
                 .foot-card {
                     color: $bg-thirthCard;
                     margin-bottom: 0;
-                    font-weight: 400;
+                    font-weight: 100;
                     padding-top: 50px;
-                    @include respond-to(medium) {
-                        font-size: 28px;
+                    @include respond-to(normal) {
+                        font-size: 25px;
                     }
                 }
             }
@@ -143,6 +143,7 @@
                 background-color: $bg-firstCard;
                 color: $bg-secondCard;
                 padding-top: 0;
+                position: relative;
                 @include respond-to(medium) {
                     opacity: 0;
                     padding-top: 50px;
@@ -154,8 +155,15 @@
                     -webkit-transition: all 0.75s;
                     -moz-transition: all 0.75s;
                 }
+                .img {
+                    background-image: url(../img/ojo-blanco-horizontal.png);
+                    width: 100%;
+                    height: 70px;
+                    background-size: contain;
+                    transform: rotate(-90deg);
+                }
                 h2 {
-                    padding-top: 60px;
+                    padding: 60px 0 0 0;
                 }
                 p {
                     font-size: 20px;

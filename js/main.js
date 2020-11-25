@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	// One Page Animation
-	$("a").on('click', function (event) {
+	// scroll menu nav
+	$(".navbar-nav").on('click', '.nav-link', function (event) {
 		if (this.hash !== "") {
 			event.preventDefault();
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
 		}
 	});
 
-	// Paralax animation
+	// Paralax animation - aparecen los bloques
 	var playScroll = function () {
 		bodyScroll = jQuery(window).scrollTop();
 		slideH = jQuery('.comunicacion').length > 0 ? jQuery('.comunicacion').outerHeight() : 0;
@@ -62,13 +62,18 @@ $(document).ready(function () {
 		overflow: true
 	});
 
-
+// envia formulario por post
 	$(function () {
-		$("body").on("submit", "form", function () {
-			var nombre = document.getElementById("nombre").value;
-			var apellido = document.getElementById("apellido").value;
-			var correo = document.getElementById("correo").value;
-			var mensaje = document.getElementById("mensaje").value;
+		$("body").on("click", ".sendForm", function () {
+			var nombre = $('#nombre').val();
+			var apellido = $('#apellido').val();
+			var correo = $('#correo').val();
+			var mensaje = $('#mensaje').val();
+
+			// borrar todos los border
+			$("input").css('border-color', 'transparent');
+
+			//valida inputs
 			if (nombre == "") {
 				$('#nombre').focus();
 				$('#nombre').css('border-color', 'red');
@@ -86,24 +91,48 @@ $(document).ready(function () {
 				$('#mensaje').css('border-color', 'red');
 				return false;
 			} else {
-				var formData = new FormData(this);
-				$('input').val('');
-				$('textarea').val('');
-				$.ajax({
-					url: '../envio.php',
-					data: formData,
-					processData: false,
-					contentType: false,
-					type: 'POST',
-					success: function () {
-					},
-					error: function (xhr, ajaxOptions, thrownError) {
-						$('.msg').text(thrownError);
-					}
-				});
-				return false;
+
+			// esconder boton enviar
+			$('.sendForm').addClass('d-none');
+			// mostrar un loading 
+			$('.load').removeClass('d-none');
+
+
+				var inputName = $('#nombre').val();
+				var inputApellido = $('#apellido').val();
+				var inputCorreo = $('#correo').val();
+				var inputMensaje = $('#mensaje').val();
+				var wrapperRespuesta = $('.respuesta-wrapper');
+				var respuestaMsg;
+				var data = {
+					nombre: inputName,
+					apellido: inputApellido,
+					correo: inputCorreo,
+					mensaje: inputMensaje
+				}
+
+				// Assign handlers immediately after making the request,
+				// and remember the jqxhr object for this request
+				$.post( "envio.php", data, function(data) {
+					//wrapperRespuesta.addClass('alert-success');
+					wrapperRespuesta.addClass('alert-success');
+					respuestaMsg = "Su consulta se envio correctamente";
+				})
+				.fail(function() {
+					//wrapperRespuesta.addClass('alert-danger');
+					wrapperRespuesta.addClass('alert-danger');
+					respuestaMsg = "Ocurrió un error, su consulta no pudo ser enviada."
+				})
+				.always(function(){
+					// esconder loading
+					$('.load').addClass('d-none');
+					$('.sendForm').removeClass('d-none');
+					// mostrar mensaje en var respuesta
+					wrapperRespuesta.text(respuestaMsg).removeClass('d-none');
+					$("input").val("");
+					$("#mensaje").val("");
+				})
 			}
 		});
 		});
-
 });

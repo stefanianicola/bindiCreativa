@@ -2,14 +2,14 @@
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth; }
   .bindiCreativa h2 {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 700; }
     @media all and (min-width: 768px) {
       .bindiCreativa h2 {
         font-size: 50px; } }
     @media all and (min-width: 992px) {
       .bindiCreativa h2 {
-        font-size: 70px; } }
+        font-size: 65px; } }
   .bindiCreativa h3 {
     font-weight: 600;
     margin-bottom: 30px; }
@@ -24,7 +24,7 @@
     margin-top: 60px; }
     @media all and (min-width: 768px) {
       .bindiCreativa .imagen {
-        height: 360px;
+        height: 420px;
         margin-top: 90px; } }
   @media all and (min-width: 768px) {
     .bindiCreativa section {
@@ -71,7 +71,7 @@
         .bindiCreativa .wrapper-nav .navbar .navbar-nav {
           margin-top: 0;
           position: absolute;
-          right: 200px;
+          right: 50px;
           top: 0px; } }
     .bindiCreativa .wrapper-nav .navbar .logo {
       width: auto;
@@ -79,9 +79,9 @@
       position: absolute;
       left: 30px;
       top: 5px; }
-      @media all and (min-width: 992px) {
+      @media all and (min-width: 768px) {
         .bindiCreativa .wrapper-nav .navbar .logo {
-          left: 200px; } }
+          left: 50px; } }
 .bindiCreativa .contrain {
   opacity: 0.9;
   -khtml-opacity: 0.9; }
@@ -90,7 +90,7 @@
   width: 100%;
   height: auto;
   min-height: 500px;
-  margin: 10px 0;
+  margin: 0;
   padding: 50px 0; }
   @media all and (min-width: 768px) {
     .bindiCreativa .wrapper-main .wrapper-card {
@@ -108,12 +108,9 @@
       .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card h2 {
         margin-top: 20px;
         color: #fff; }
-        @media all and (min-width: 768px) {
-          .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card h2 {
-            margin-top: 0; } }
       .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card p {
-        color: #fecd08;
-        font-size: 30px;
+        color: #f0ed73;
+        font-size: 28px;
         font-weight: 600; }
         @media all and (min-width: 768px) {
           .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card p {
@@ -141,7 +138,10 @@
           position: absolute;
           right: 100px;
           height: 360px;
-          margin: 20px 0 0 0; } }
+          margin: 100px 0 0 0; } }
+      @media all and (min-width: 992px) {
+        .bindiCreativa .wrapper-main .wrapper-card.escuchamos .imagen {
+          margin: 40px 0 0 0; } }
     .bindiCreativa .wrapper-main .wrapper-card.escuchamos .wrap-title {
       margin-top: 60px;
       text-align: center; }
@@ -160,11 +160,11 @@
     .bindiCreativa .wrapper-main .wrapper-card.escuchamos .foot-card {
       color: #787877;
       margin-bottom: 0;
-      font-weight: 400;
+      font-weight: 100;
       padding-top: 50px; }
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 992px) {
         .bindiCreativa .wrapper-main .wrapper-card.escuchamos .foot-card {
-          font-size: 28px; } }
+          font-size: 25px; } }
   .bindiCreativa .wrapper-main .wrapper-card.servicios {
     background-color: #787877;
     text-align: center;
@@ -210,7 +210,8 @@
   .bindiCreativa .wrapper-main .wrapper-card.origen {
     background-color: #FE4096;
     color: #f0ed73;
-    padding-top: 0; }
+    padding-top: 0;
+    position: relative; }
     @media all and (min-width: 768px) {
       .bindiCreativa .wrapper-main .wrapper-card.origen {
         opacity: 0;
@@ -222,8 +223,14 @@
         transition: all 0.75s;
         -webkit-transition: all 0.75s;
         -moz-transition: all 0.75s; } }
+    .bindiCreativa .wrapper-main .wrapper-card.origen .img {
+      background-image: url(../img/ojo-blanco-horizontal.png);
+      width: 100%;
+      height: 70px;
+      background-size: contain;
+      transform: rotate(-90deg); }
     .bindiCreativa .wrapper-main .wrapper-card.origen h2 {
-      padding-top: 60px; }
+      padding: 60px 0 0 0; }
     .bindiCreativa .wrapper-main .wrapper-card.origen p {
       font-size: 20px;
       line-height: 32px;
@@ -293,9 +300,17 @@
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 15px; }
-  .bindiCreativa .wrap-foot .center-foot form .btn {
+  .bindiCreativa .wrap-foot .center-foot .btn {
     background-color: #FE4096;
-    color: #fff; }
+    color: #fff;
+    display: none; }
+    @media all and (min-width: 768px) {
+      .bindiCreativa .wrap-foot .center-foot .btn {
+        display: block; } }
+    .bindiCreativa .wrap-foot .center-foot .btn:hover {
+      background-color: #DF0174; }
+  .bindiCreativa .wrap-foot .center-foot .load {
+    text-align: center; }
   .bindiCreativa .wrap-foot .center-foot .imagen {
     margin-top: 50px;
     width: 100%;
