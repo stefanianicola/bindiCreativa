@@ -269,8 +269,11 @@
 
 .bindiCreativa .wrap-foot .line-foot {
   width: 100%;
-  height: 80px;
+  height: 40px;
   background-color: #f0ed73; }
+  @media all and (min-width: 768px) {
+    .bindiCreativa .wrap-foot .line-foot {
+      height: 80px; } }
 .bindiCreativa .wrap-foot .center-foot {
   position: relative;
   width: 100%;
