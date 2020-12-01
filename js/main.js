@@ -34,11 +34,11 @@ $(document).ready(function () {
 			jQuery('#services').addClass('qa-parallax-active');
 		}
 
-		if (bodyScroll > (slideH + usH + (firstServiceH / 3))) {
+		if (bodyScroll > (slideH + usH + (firstServiceH / 4))) {
 			jQuery('#origen').addClass('qa-parallax-active');
 		}
 
-		if (bodyScroll > (slideH + usH + firstServiceH + (secondServiceH / 3))) {
+		if (bodyScroll > (slideH + usH + firstServiceH + (secondServiceH / 4))) {
 			jQuery('#credenciales').addClass('qa-parallax-active');
 		}
 		if (bodyScroll > 0) {
