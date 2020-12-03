@@ -21,16 +21,24 @@
                         padding: 200px 0;
                     }
                     h2 {
-                        margin-top: 20px;
+                        margin-top: 60px;
                         color: $whiteColor;
+                        @include respond-to(medium){
+                            margin-top: 20px;
+                        }
                     }
                     p {
                         color: $bg-secondCard;
-                        font-size: 28px;
+                        font-size: 21px;
                         font-weight: 600;
                         text-transform: uppercase;
                         @include respond-to(medium) {
+                            font-size: 30px;
+                            padding-left: 25px;
+                        }
+                        @include respond-to(normal) {
                             font-size: 40px;
+                            padding-left: 0;
                         }
                     }
                 }

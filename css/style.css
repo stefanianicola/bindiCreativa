@@ -107,16 +107,24 @@
         .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card {
           padding: 200px 0; } }
       .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card h2 {
-        margin-top: 20px;
+        margin-top: 60px;
         color: #fff; }
+        @media all and (min-width: 768px) {
+          .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card h2 {
+            margin-top: 20px; } }
       .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card p {
         color: #f0ed73;
-        font-size: 28px;
+        font-size: 21px;
         font-weight: 600;
         text-transform: uppercase; }
         @media all and (min-width: 768px) {
           .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card p {
-            font-size: 40px; } }
+            font-size: 30px;
+            padding-left: 25px; } }
+        @media all and (min-width: 992px) {
+          .bindiCreativa .wrapper-main .wrapper-card.comunicacion .title-card p {
+            font-size: 40px;
+            padding-left: 0; } }
   .bindiCreativa .wrapper-main .wrapper-card.escuchamos {
     background-color: #f0ed73;
     padding-bottom: 10px; }
