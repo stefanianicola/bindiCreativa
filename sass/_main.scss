@@ -156,10 +156,12 @@
                 background-color: $bg-firstCard;
                 color: $bg-secondCard;
                 padding-top: 0;
+                padding-bottom: 50px;
                 position: relative;
                 @include respond-to(medium) {
                     opacity: 0;
-                    padding-top: 100px;
+                    padding-top: 70px;
+                    padding-bottom: 70px;
                     visibility: hidden;
                     transform: translateY(100px);
                     -webkit-transform: translateY(100px);
@@ -176,17 +178,22 @@
                     background-repeat: no-repeat;
                     position: absolute;
                     right: 10px;
-                    top: 65px;
+                    top: 50px;
                 }
-                h2 {
-                    padding: 60px 0 0 0;
-                }
-                p {
-                    font-size: 20px;
-                    line-height: 32px;
-                    color: $whiteColor;
-                    padding: 0;
-                    margin: 0;
+                .wrap-text {
+                    h2 {
+                        padding: 60px 0 0 0;
+                    }
+                    p {
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: $whiteColor;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    @include respond-to(medium){
+                        padding-top: 60px;
+                    }
                 }
             }
             &.credenciales {

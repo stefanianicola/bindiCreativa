@@ -224,11 +224,13 @@
     background-color: #FE4096;
     color: #f0ed73;
     padding-top: 0;
+    padding-bottom: 50px;
     position: relative; }
     @media all and (min-width: 768px) {
       .bindiCreativa .wrapper-main .wrapper-card.origen {
         opacity: 0;
-        padding-top: 100px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         visibility: hidden;
         transform: translateY(100px);
         -webkit-transform: translateY(100px);
@@ -244,15 +246,18 @@
       background-repeat: no-repeat;
       position: absolute;
       right: 10px;
-      top: 65px; }
-    .bindiCreativa .wrapper-main .wrapper-card.origen h2 {
+      top: 50px; }
+    .bindiCreativa .wrapper-main .wrapper-card.origen .wrap-text h2 {
       padding: 60px 0 0 0; }
-    .bindiCreativa .wrapper-main .wrapper-card.origen p {
+    .bindiCreativa .wrapper-main .wrapper-card.origen .wrap-text p {
       font-size: 20px;
       line-height: 32px;
       color: #fff;
       padding: 0;
       margin: 0; }
+    @media all and (min-width: 768px) {
+      .bindiCreativa .wrapper-main .wrapper-card.origen .wrap-text {
+        padding-top: 60px; } }
   .bindiCreativa .wrapper-main .wrapper-card.credenciales {
     min-height: auto;
     height: auto;
